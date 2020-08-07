@@ -16,9 +16,12 @@
       goods: {
         type: Array,
         default() {
-          return {}
+          return []
         }
       }
+    },
+    created() {
+      console.log(this.goods);
     }
   }
 </script>

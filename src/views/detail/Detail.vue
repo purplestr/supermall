@@ -95,7 +95,9 @@
         product.price = this.goods.realPrice;
         product.iid = this.iid;
 
-        this.$store.dispatch('addCate',product)
+        this.$store.dispatch('addCate',product).then(res => {
+          this.$toast.show(res);
+        })
       }
 
     },

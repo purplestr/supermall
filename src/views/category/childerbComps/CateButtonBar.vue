@@ -9,7 +9,7 @@
       <span>合计：{{totalPrice}}</span>
     </div>
 
-    <div class="bottom-right" >
+    <div class="bottom-right" @click="totalClick">
       <span>去计算（{{checkLength}})</span>
     </div>
   </div>
@@ -46,6 +46,11 @@
           this.cateItem.forEach(item => item.isCheck = false)
         } else {
           this.cateItem.forEach(item => item.isCheck = true)
+        }
+      },
+      totalClick() {
+        if(this.checkLength == 0) {
+          this.$toast.show('请选择要购买的商品')
         }
       }
     }
