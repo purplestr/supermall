@@ -5,7 +5,7 @@ export function request(config) {
   //1.创建axios实例
   const instance = axios.create({
 <<<<<<< HEAD
-    baseURL: 'http://152.136.185.210:8000/api/z8',
+    baseURL: '',
 =======
     baseURL: '',
 >>>>>>> d667b45f178aa917bfe868b0762147d07e228c90
